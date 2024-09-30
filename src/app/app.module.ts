@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MainComponent } from './components/main/main.component';
+import { PreviewComponent } from './components/preview/preview.component';
+import { SavePreviewComponent } from './pages/save-preview/save-preview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    MainComponent
+    MainComponent,
+    PreviewComponent,
+    SavePreviewComponent
   ],
   imports: [
     BrowserModule,
