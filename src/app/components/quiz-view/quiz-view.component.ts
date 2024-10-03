@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class QuizViewComponent {
 
+  openMainTile: boolean = true;
+
+  openBottomTitle : boolean = true;
+
+  openTile(){
+    this.openMainTile = !this.openMainTile
+  }
+
+  openTileSecond(){
+    this.openBottomTitle = !this.openBottomTitle
+  }
+
 }

@@ -9,6 +9,7 @@
         </div>
     </div>
     <div class="mainRest">
+
         <div class="mainRestTop">
             <p><span>Grade 5 - 8 FOSS Physics Formative Assessment</span> (Locked)</p>
             <div>
@@ -16,29 +17,118 @@
                 <button>SAVE AND PREVIEW</button>
             </div>
         </div>
+
         <div class="mainRestTitle">
             <div class="mainRestTitleLeft">
                 <p class="left-1">✐</p>
-                <p class="left-2">Question Properties</p>
+                <p class="left-2">Course Quiz Properties</p>
             </div>
             <div class="mainRestTitleMiddle">
-                <p class="right-1">2</p>
-                <p class="right-2">Question Content</p>
+                <p class="middle-1">✐</p>
+                <p class="middle-2">Course Quiz Content</p>
             </div>
             <div class="mainRestTitleRight">
-                <p class="right-1">2</p>
-                <p class="right-2">Question Content</p>
+                <p class="right-1">3</p>
+                <p class="right-2">Course Quiz Content</p>
             </div>
         </div>
+
+        <div class="checkErrors">
+            <p></p>
+            <button>CHECK FOR ERRORS</button>
+        </div>
+
         <div class="selectTools">
-            <p>SELECT TOOLS</p>
+            <div class="scoringHeaderTile">
+                <p>Set Global Scoring Rules (Optional)</p>
+                <button (click)="openTile()">↑</button>
+            </div>
+            <div class="scoringMainTile" *ngIf="openMainTile">
+                <p class="p-1">Matching Question</p>
+                <div class="radioBtns">
+                    <div>
+                        <input type="radio" name="radioBtn" id="">
+                        <p>All or Nothing</p>
+                    </div>
+                    <div>
+                        <input type="radio" name="radioBtn" id="">
+                        <p>Correct answers</p>
+                    </div>
+                </div>
+                <div class="maxConnections">
+                    <p>Correct answers</p>
+                    <select name="" id=""></select>
+                </div>
+                <p class="p-2">(Minimum: 1 and Maximum: 99)</p>
+                <div class="scoringBtns">
+                    <button>RESET</button>
+                    <button>APPLY</button>
+                </div>
+            </div>
         </div>
+
         <div class="addFeedback">
-            <p>ADD FEEDBACK</p>
+            <div class="scoringHeaderTile">
+                <div>
+                    <p>ELA assignment</p>
+                    <p>Total Points: 3</p>
+                </div>
+                <button (click)="openTileSecond()">↑</button>
+            </div>
+            <div class="assignMarks" *ngIf="openBottomTitle">
+                <div class="assignMarksHeader">
+                    <div class="index">
+                        <p>1</p>
+                    </div>
+                    <div class="details">
+                        <img src="../../../assets/func_logo.png" alt="">
+                        <div>
+                           <p>Match the fruits with their color?</p> 
+                           <span>ID: 98765442  |  Points: 3  |  Award points for: All or Nothing</span>
+                        </div>
+                    </div>
+                    <div class="edit">
+                        <p>Edit Points</p>
+                        <i class="fa-solid fa-ellipsis-vertical" style="color: #63E6BE;"></i>
+                    </div>
+                </div>
+                <div class="assignMarksTile">
+                    <div>
+                         <p>Award points for* (Points: 1-99)</p>
+                         <div class="radioBtns">
+                            <div>
+                                <input type="radio" name="radioBtn" id="">
+                                <p>All or Nothing</p>
+                            </div>
+                            <div>
+                                <input type="radio" name="radioBtn" id="">
+                                <p>Correct answers</p>
+                            </div>
+                        </div>
+                         <p>Connections:</p>
+                         <div class="giveMarks">
+                            <p>Apple</p>
+                            <span>Red</span>
+                            <input type="text"/>
+                         </div>
+                         <div class="giveMarks">
+                            <p>Grapes</p>
+                            <span>Green</span>
+                            <input type="text"/>
+                         </div>
+                         <div class="giveMarks">
+                            <p>Banana</p>
+                            <span>Yellow</span>
+                            <input type="text"/>
+                         </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="previousBtn">
             <button>PREVIOUS</button>
         </div>
     </div>
-    
+
 </div>
