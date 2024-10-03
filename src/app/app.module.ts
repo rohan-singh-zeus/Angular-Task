@@ -8,6 +8,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { MainComponent } from './components/main/main.component';
 import { PreviewComponent } from './components/preview/preview.component';
 import { SavePreviewComponent } from './pages/save-preview/save-preview.component';
+import { QuizComponent } from './pages/quiz/quiz.component';
+import { QuizViewComponent } from './components/quiz-view/quiz-view.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { SavePreviewComponent } from './pages/save-preview/save-preview.componen
     HomeComponent,
     MainComponent,
     PreviewComponent,
-    SavePreviewComponent
+    SavePreviewComponent,
+    QuizComponent,
+    QuizViewComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
